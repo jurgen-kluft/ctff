@@ -1,6 +1,10 @@
 // basisu_transcoder_uastc.h
 #ifndef __CTFF_BASISU_TRANSCODER_UASTC_H__
 #define __CTFF_BASISU_TRANSCODER_UASTC_H__
+#ifdef USE_PRAGMA_ONCE
+#    pragma once
+#endif
+
 #include "ctff/private/transcoder/basisu_transcoder_internal.h"
 
 namespace basist

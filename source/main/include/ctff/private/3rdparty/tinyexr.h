@@ -2,6 +2,10 @@
 
 #ifndef TINYEXR_H_
 #define TINYEXR_H_
+#ifdef USE_PRAGMA_ONCE
+#    pragma once
+#endif
+
 /*
 Copyright (c) 2014 - 2021, Syoyo Fujita and many contributors.
 All rights reserved.
@@ -107,35 +111,35 @@ extern "C" {
 
 // Use miniz or not to decode ZIP format pixel. Linking with zlib
 // required if this flag is 0 and TINYEXR_USE_STB_ZLIB is 0.
-#ifndef __CTFF_TINYEXR_H__
-#define __CTFF_TINYEXR_H__
-#ifndef __CTFF_TINYEXR_H__
-#define __CTFF_TINYEXR_H__
+#ifndef TINYEXR_USE_MINIZ
+#define TINYEXR_USE_MINIZ (1)
+#ifndef MINIZ_HEADER_FILE_ONLY
+#define MINIZ_HEADER_FILE_ONLY (1)
 #endif
 #endif
 
 // Use the ZIP implementation of stb_image.h and stb_image_write.h.
-#ifndef __CTFF_TINYEXR_H__
-#define __CTFF_TINYEXR_H__
+#ifndef TINYEXR_USE_STB_ZLIB
+#define TINYEXR_USE_STB_ZLIB (0)
 #endif
 
 // Use nanozlib.
-#ifndef __CTFF_TINYEXR_H__
-#define __CTFF_TINYEXR_H__
+#ifndef TINYEXR_USE_NANOZLIB
+#define TINYEXR_USE_NANOZLIB (0)
 #endif
 
 // Disable PIZ compression when applying cpplint.
-#ifndef __CTFF_TINYEXR_H__
-#define __CTFF_TINYEXR_H__
+#ifndef TINYEXR_USE_PIZ
+#define TINYEXR_USE_PIZ (1)
 #endif
 
-#ifndef __CTFF_TINYEXR_H__
-#define __CTFF_TINYEXR_H__
+#ifndef TINYEXR_USE_ZFP
+#define TINYEXR_USE_ZFP (0)  // TinyEXR extension.
 // http://computation.llnl.gov/projects/floating-point-compression
 #endif
 
-#ifndef __CTFF_TINYEXR_H__
-#define __CTFF_TINYEXR_H__
+#ifndef TINYEXR_USE_THREAD
+#define TINYEXR_USE_THREAD (0)  // No threaded loading.
 // http://computation.llnl.gov/projects/floating-point-compression
 #endif
 
@@ -146,7 +150,6 @@ extern "C" {
 #define TINYEXR_USE_OPENMP (0)
 #endif
 #endif
-
 #define TINYEXR_SUCCESS (0)
 #define TINYEXR_ERROR_INVALID_MAGIC_NUMBER (-1)
 #define TINYEXR_ERROR_INVALID_EXR_VERSION (-2)

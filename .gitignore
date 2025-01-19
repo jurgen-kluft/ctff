@@ -2,10 +2,7 @@
 *
 !*/
 
-vendor/
-t2-output/
 target/
-tags
 
 #except the following files
 !.gitignore
@@ -15,6 +12,7 @@ tags
 !*.c
 !*.h
 !*.inl
+!*.inc
 
 !*.sh
 !*.go

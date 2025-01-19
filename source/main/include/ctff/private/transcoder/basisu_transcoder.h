@@ -15,6 +15,9 @@
 // limitations under the License.
 #ifndef __CTFF_BASISU_TRANSCODER_H__
 #define __CTFF_BASISU_TRANSCODER_H__
+#ifdef USE_PRAGMA_ONCE
+#    pragma once
+#endif
 
 // By default KTX2 support is enabled to simplify compilation. This implies the need for the Zstandard library (which we distribute as a single source file in the "zstd" directory) by default.
 // Set BASISD_SUPPORT_KTX2 to 0 to completely disable KTX2 support as well as Zstd/miniz usage which is only required for UASTC supercompression in KTX2 files.

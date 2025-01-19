@@ -15,6 +15,9 @@
 // limitations under the License.
 #ifndef __CTFF_BASISU_H__
 #define __CTFF_BASISU_H__
+#ifdef USE_PRAGMA_ONCE
+#    pragma once
+#endif
 
 #ifdef _MSC_VER
 

@@ -302,12 +302,12 @@ Implementation */
 #include <stdlib.h>
 #include <string.h>
 
-#ifndef __CTFF_QOI_H__
-#define __CTFF_QOI_H__
+#ifndef QOI_MALLOC
+	#define QOI_MALLOC(sz) malloc(sz)
 	#define QOI_FREE(p)    free(p)
 #endif
-#ifndef __CTFF_QOI_H__
-#define __CTFF_QOI_H__
+#ifndef QOI_ZEROARR
+	#define QOI_ZEROARR(a) memset((a),0,sizeof(a))
 #endif
 
 #define QOI_OP_INDEX  0x00 /* 00xxxxxx */
