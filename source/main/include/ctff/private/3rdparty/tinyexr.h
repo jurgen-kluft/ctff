@@ -1,7 +1,7 @@
 // rg 8/23/2024: I fixed some minor undefined behavior in this module (signed 32-bit left shifts).
 
-#ifndef TINYEXR_H_
-#define TINYEXR_H_
+#ifndef __CTFF_TINYEXR_H__
+#define __CTFF_TINYEXR_H__
 #ifdef USE_PRAGMA_ONCE
 #    pragma once
 #endif

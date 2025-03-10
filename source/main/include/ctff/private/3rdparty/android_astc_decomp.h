@@ -1,6 +1,6 @@
 // File: android_astc_decomp.h
-#ifndef _TCUASTCUTIL_HPP
-#define _TCUASTCUTIL_HPP
+#ifndef __CTFF_ANDROID_ASTC_DECOMP_H__
+#define __CTFF_ANDROID_ASTC_DECOMP_H__
 /*-------------------------------------------------------------------------
  * drawElements Quality Program Tester Core
  * ----------------------------------------

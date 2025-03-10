@@ -11,8 +11,8 @@
 extern "C" {
 #endif
 
-#ifndef ZSTD_H_235446
-#define ZSTD_H_235446
+#ifndef __CTFF_ZSTD_H__
+#define __CTFF_ZSTD_H__
 
 /* ======   Dependency   ======*/
 #include <limits.h>   /* INT_MAX */

@@ -18,8 +18,8 @@
    limitations under the License.
 */
 
-#ifndef MINIZ_HEADER_INCLUDED
-#define MINIZ_HEADER_INCLUDED
+#ifndef __CTFF_BASISU_MINIZ_H__
+#define __CTFF_BASISU_MINIZ_H__
 
 #include <stdlib.h>
 

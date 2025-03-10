@@ -2,6 +2,8 @@
 
 Texture file format compiler.
 
+Note: Source code from [here](https://github.com/BinomialLLC/basis_universal)
+
 ## Read
 
 - [x] BMP

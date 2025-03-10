@@ -211,8 +211,8 @@ The alpha value remains unchanged from the previous pixel.
 /* -----------------------------------------------------------------------------
 Header - Public functions */
 
-#ifndef QOI_H
-#define QOI_H
+#ifndef __CTFF_QOI_H__
+#define __CTFF_QOI_H__
 
 #ifdef __cplusplus
 extern "C" {
