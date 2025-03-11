@@ -29,6 +29,7 @@
 #include "ctff/private/encoder/basisu_comp.h"
 #include "ctff/private/transcoder/basisu_transcoder.h"
 #include "ctff/private/encoder/basisu_ssim.h"
+#include "ctff/private/encoder/basisu_opencl.h"
 
 #define MINIZ_HEADER_FILE_ONLY
 #define MINIZ_NO_ZLIB_COMPATIBLE_NAMES
