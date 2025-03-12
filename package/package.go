@@ -35,6 +35,10 @@ func GetPackage() *denv.Package {
 	maintest.Dependencies = append(maintest.Dependencies, unittestpkg.GetMainLib())
 	maintest.Dependencies = append(maintest.Dependencies, mainlib)
 
+	// the cli application
+	mainapp := denv.SetupDefaultCppCliProject(name+"_app", repo_path+name)
+	mainapp.Dependencies = append(mainapp.Dependencies, mainlib)
+
 	mainpkg.AddMainLib(mainlib)
 	mainpkg.AddUnittest(maintest)
 	return mainpkg
